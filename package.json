@@ -1,0 +1,7 @@
+{
+    "name": "GH Actions demo",
+    "main": "node script.js",
+    "dependencies": {
+        "moment": "^2.29.4"
+    }
+}

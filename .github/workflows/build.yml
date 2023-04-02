@@ -1,7 +1,13 @@
+name: Node Continuos Integration
 on: push
 jobs:
-  first-job:
+  build-node:
     runs-on: macos-latest
     steps:
       - run: node -v
+        name: Check Node version
       - run: npm -v
+      - uses: actions/checkout@v3
+        name: Checkout code from GitHub
+      - run: npm i
+      - run: node script.js
